@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: cursive;
+  background-color: #7D5BBE;
+}
+header {
+  background-color: #BF4AA8;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+nav {
+  background-color: #DD342F;
+  display: flex;
+  padding: 5px 10px;
+}
+nav a {
+  margin-right: 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+.content {
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-table {
+  background-color: white;
+  color: black;
+  border-collapse: collapse;
+  width: fit-content;
+  margin-top: 20px;
+}
+.product-table th,
+.product-table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+.add-btn {
+  background-color: #BF4AA8;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: cursive;
+}
+.popup {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup-content {
+  background-color: #BF4AA8;
+  padding: 40px;
+  border-radius: 10px;
+  width: 800px;
+}
+.popup-content h2 {
+  color: white;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.popup-content form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 20px;
+  column-gap: 40px;
+}
+.form-left, .form-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-left label,
+.form-right label {
+  color: white;
+}
+.form-left input,
+.form-right input {
+  padding: 15px;
+  font-family: cursive;
+  font-size: 1.1rem;
+  background-color: #ddd;
+  border: none;
+}
+.form-right button {
+  margin-top: 25px;
+  padding: 15px 30px;
+  border: none;
+  background-color: #7D5BBE;
+  color: white;
+  font-family: cursive;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  background-color: #BF4AA8;
+  color: white;
+  padding: 10px;
+  font-size: small;
+}
